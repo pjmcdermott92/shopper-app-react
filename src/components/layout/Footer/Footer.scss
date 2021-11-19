@@ -1,0 +1,27 @@
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+    padding: 1rem;
+    background-color: var(--color-dark-accent);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.top-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark);
+    border-radius: 50%;
+    font-size: 2rem;
+    opacity: .25;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+
+    &:hover { opacity: .75; }
+}

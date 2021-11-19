@@ -1,0 +1,8 @@
+{
+  "short_name": "Shopper",
+  "name": "Shopper - Cool Swag for Cool Coders",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

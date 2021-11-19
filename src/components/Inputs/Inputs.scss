@@ -1,0 +1,83 @@
+.form-group {
+    position: relative;
+    margin: 2rem .25rem 2.5rem;
+    padding: .75rem;
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+
+    &.form-50 {
+        width: 50%;
+    }
+    
+    &:focus-within {
+        padding: .72rem;
+        border-width: 2px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0;
+        padding-right: 2rem;
+        font: {
+            family: inherit;
+            size: .95rem;
+        }
+        border: none;
+        background: transparent;
+        outline: none;
+    }
+
+    label {
+        position: absolute;
+        top: -.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 .15rem;
+        font-size: .95rem;
+        background-color: var(--color-white);
+
+        .fa-asterisk {
+            padding-left: .15rem;
+            font-size: .5rem;
+        }
+    }
+
+    &.error {
+        border-color: var(--color-danger);
+
+        label { color: var(--color-danger); }
+    }
+
+    .error-message {
+        position: absolute;
+        bottom: -1.25rem;
+        left: .5rem;
+        display: inline-block;
+        width: 100%;
+        font-size: .85rem;
+        color: var(--color-danger);
+    }
+
+    .toggle-icon {
+        position: absolute;
+        right: .5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .card-img {
+        position: absolute;
+        right: 2rem;
+        top: 15%;
+        width: 20px;
+        height: 30px;
+
+        i {
+            margin: .15rem 0 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        img { height: 100%; }
+    }
+}
